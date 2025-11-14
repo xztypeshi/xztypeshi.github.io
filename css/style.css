@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+header.nav {
+    float: right;
+}
+
+ul.horizontal-navBar {
+  list-style: none;
+  float: right;
+}
+
+ul.horizontal-navBar li {
+  display: inline-block;
+}
