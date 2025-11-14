@@ -1,17 +1,159 @@
-body {
-    background-color: black;
-    color: white;
+:root {
+  --gradient: linear-gradient(90deg,rgba(255, 43, 166, 1) 0%, rgba(32, 227, 255, 1) 50%, rgba(182, 255, 59, 1) 100%);
 }
 
-header.nav {
-    float: right;
+@font-face {
+  font-family: 'ClashDisplay-Regular';
+  src: url('../resources/global/fonts/ClashDisplay-Regular.woff2') format('woff2'),
+       url('../resources/global/fonts/ClashDisplay-Regular.woff') format('woff'),
+       url('../resources/global/fonts/ClashDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+* {
+  outline: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: #333333;
+    color: white;
+    margin: 0;
+    font-family: ClashDisplay-Regular;
+}
+
+h2 {
+  font-size: 200%;
+}
+
+/* Header */
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+.horizontal-navBar {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  user-select: none;
+}
+
+h1 span{
+  color: #FF2BA6;
+  background-image: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+
+.horizontal-navBar li:nth-child(2) { /* Logo is first child */
+  margin-left: auto;
 }
 
 ul.horizontal-navBar {
-  list-style: none;
-  float: right;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
 }
 
 ul.horizontal-navBar li {
+  display: flex;
+  align-items: center;
+}
+
+ul.horizontal-navBar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  text-decoration: none;
+}
+
+ul.horizontal-navBar a:hover {
+  background-color: #111;
+}
+
+/*Main*/
+
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+/*Main Concert*/
+
+.primaryFestival {
+  display: flex;
+  width: 100%;
+}
+
+.primaryFestivalImage,
+.primaryFestivalText {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+}
+
+.primaryFestivalImage {
+  overflow: hidden; /* hide cropped parts */
+}
+
+.primaryFestivalImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fill container, crop if needed */
+  display: block;
+}
+
+.primaryFestivalText {
+  padding: 2rem;
+  text-align: center;
+}
+
+.primaryFestivalText h2 span{
+  color: #FF2BA6;
+  background-image: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: inline-block;
+}
+
+.primaryFestivalText p:nth-of-type(1),
+.primaryFestivalText p:nth-of-type(2) {
+  font-size: 125%;
+}
+
+/*Last Releases*/
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.lastReleasesSection img {
+  width:  256px;
+  height: 256px;
+  object-fit: cover;
+}
+
+/*Featured Artists*/
+
+.featuredArtistsSection img {
+  width:  256px;
+  height: 256px;
+  object-fit: cover;
 }

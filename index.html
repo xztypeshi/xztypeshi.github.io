@@ -4,10 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-=======
     <link rel="stylesheet" href="css/style.css">
->>>>>>> ef95fe3 (test)
+    <link rel="icon" type="image/x-icon" href="resources/img/logo/blackLogo.ico">
     <title>SoundTecITB - Página principal</title>
 </head>
 
@@ -15,42 +13,47 @@
 
     <!-- Header/Navbar -->
     <header>
-        <h1>SoundTecITB</h1>
         <nav>
-<<<<<<< HEAD
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-=======
-            <ul class="horizontal-navBar">
-                <li><a href="index.html">Inicioa</a></li>
->>>>>>> ef95fe3 (test)
-                <li><a href="festivales.html">Festivales</a></li>
-                <li><a href="detalle.html">Detalle</a></li>
-                <li><a href="alta.html">Darse de alta</a></li>
-            </ul>
+            <div>
+                <ul class="horizontal-navBar">
+                    <li>
+                        <h1>Sound<span>TecITB</span></h1>
+                    </li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="festivales.html">Festivales</a></li>
+                    <li><a href="detalle.html">Detalle</a></li>
+                    <li><a href="alta.html">Darse de alta</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <!--Main Page-->
-    <main>
+    <main class="container">
         <!--Primary festival-->
-        <section>
-            <h2>Rolling Loud - Festival Principal</h2>
-            <img src="img/cartelRollingLoud.webp" alt="Imagen del festival principal">
-            <p>Fechas: 18 - 20 julio 2026</p>
-            <p>Lugar: Miami, Estados Unidos</p>
-            <p>Rolling Loud es el festival de hip-hop más grande del mundo, reuniendo a artistas de trap, rap y música
-                urbana en un espectáculo global.</p>
-            <a href="">Entradas</a>
-            <a href="">Descubrir música</a>
+        <section class="primaryFestivalSection">
+            <div class="primaryFestival">
+                <div class="primaryFestivalImage">
+                    <img class="primaryFestivalImg" src="resources/img/cartelRollingLoud.webp" alt="Imagen del festival principal">
+                </div>
+                <div class="primaryFestivalText">
+                    <h2><span>Rolling Loud</span> - Festival Principal</h2>
+                    <p>Fechas: 18 - 20 julio 2026</p>
+                    <p>Lugar: Miami, Estados Unidos</p>
+                    <p>Rolling Loud es el festival de hip-hop más grande del mundo, reuniendo a artistas de trap, rap y música urbana en un espectáculo global.</p>
+                    <a href="">Entradas</a>
+                    <a href="">Descubrir música</a>
+                </div>
+            </div>
         </section>
 
         <!--Last releases (Albums/Songs)-->
-        <section>
+        <section class="lastReleasesSection">
             <h2>Últimos lanzamientos</h2>
 
+            <div class="flex-container">
             <article>
-                <img src="img/luckiAlbumOne.webp" alt="Portada del álbum 1">
+                <img src="resources/img/luckiAlbumOne.webp" alt="Portada del álbum 1">
                 <p>Título: Days B4 III</p>
                 <p>Artista: LUCKI</p>
                 <p>Género: Hip Hop / Trap</p>
@@ -58,7 +61,7 @@
             </article>
 
             <article>
-                <img src="img/cartiAlbumTwo.webp" alt="Portada del álbum 2">
+                <img src="resources/img/cartiAlbumTwo.webp" alt="Portada del álbum 2">
                 <p>Título: Whole Lotta Red</p>
                 <p>Artista: Playboi Carti</p>
                 <p>Género: Hip Hop / Rage</p>
@@ -66,7 +69,7 @@
             </article>
 
             <article>
-                <img src="img/loneAlbumThree.webp" alt="Portada del álbum 3">
+                <img src="resources/img/loneAlbumThree.webp" alt="Portada del álbum 3">
                 <p>Título: If Looks Could Kill</p>
                 <p>Artista: Destroy Lonely</p>
                 <p>Género: Trap Experimental</p>
@@ -74,7 +77,7 @@
             </article>
 
             <article>
-                <img src="img/pndAlbumFour.webp" alt="Portada del álbum 4">
+                <img src="resources/img/pndAlbumFour.webp" alt="Portada del álbum 4">
                 <p>Título: PARTYNEXTDOOR TWO</p>
                 <p>Artista: PARTYNEXTDOOR</p>
                 <p>Género: R&B / Soul</p>
@@ -82,15 +85,17 @@
             </article>
 
             <article>
-                <img src="img/nettspendAlbumFive.webp" alt="Portada del álbum 5">
+                <img src="resources/img/nettspendAlbumFive.webp" alt="Portada del álbum 5">
                 <p>Título: BAD ASS F*CKING KID</p>
                 <p>Artista: Nettspend</p>
                 <p>Género: Rage / PluggnB</p>
                 <p><a href="detalle.html">Más info</a></p>
             </article>
+            </div>
 
+            <div class="flex-container">
             <article>
-                <img src="img/yeatAlbumSix.webp" alt="Portada del álbum 6">
+                <img src="resources/img/yeatAlbumSix.webp" alt="Portada del álbum 6">
                 <p>Título: After Lyfe</p>
                 <p>Artista: Yeat</p>
                 <p>Género: Trap</p>
@@ -98,7 +103,7 @@
             </article>
 
             <article>
-                <img src="img/2hollisAlbumSeven.webp" alt="Portada del álbum 7">
+                <img src="resources/img/2hollisAlbumSeven.webp" alt="Portada del álbum 7">
                 <p>Título: 2</p>
                 <p>Artista: 2hollis</p>
                 <p>Género: Alternative / Pop</p>
@@ -106,7 +111,7 @@
             </article>
 
             <article>
-                <img src="img/cartiAlbumEight.webp" alt="Portada del álbum 8">
+                <img src="resources/img/cartiAlbumEight.webp" alt="Portada del álbum 8">
                 <p>Título: I AM MUSIC</p>
                 <p>Artista: Playboi Carti</p>
                 <p>Género: Rage / Hip Hop</p>
@@ -114,7 +119,7 @@
             </article>
 
             <article>
-                <img src="img/kodakAlbumNine.webp" alt="Portada del álbum 9">
+                <img src="resources/img/kodakAlbumNine.webp" alt="Portada del álbum 9">
                 <p>Título: Just Getting Started</p>
                 <p>Artista: Kodak Black</p>
                 <p>Género: Hip Hop / Trap</p>
@@ -122,69 +127,70 @@
             </article>
 
             <article>
-                <img src="img/kenAlbumTen.webp" alt="Portada del álbum 10">
+                <img src="resources/img/kenAlbumTen.webp" alt="Portada del álbum 10">
                 <p>Título: A Great Chaos</p>
                 <p>Artista: Ken Carson</p>
                 <p>Género: Trap</p>
                 <p><a href="detalle.html">Más info</a></p>
             </article>
+            </div>
         </section>
 
 
-        <!--Highlighted Artists-->
-        <section>
+        <!--Featured Artists-->
+        <section class="featuredArtistsSection">
             <h2>Artistas destacados</h2>
             <article>
-                <img src="img/Artists/oneArtistCarti.webp" alt="Foto del artista Playboi Carti">
+                <img src="resources/img/Artists/oneArtistCarti.webp" alt="Foto del artista Playboi Carti">
                 <p>Nombre: Playboi Carti</p>
                 <p>Género: Rage / Trap</p>
                 <p>Valoración: ★★★★★</p>
             </article>
 
             <article>
-                <img src="img/Artists/twoArtistKen.webp" alt="Foto del artista Ken Carson">
+                <img src="resources/img/Artists/twoArtistKen.webp" alt="Foto del artista Ken Carson">
                 <p>Nombre: Ken Carson</p>
                 <p>Género: Trap</p>
                 <p>Valoración: ★★★★☆</p>
             </article>
 
             <article>
-                <img src="img/Artists/threeArtistLone.webp" alt="Foto del artista Destroy Lonely">
+                <img src="resources/img/Artists/threeArtistLone.webp" alt="Foto del artista Destroy Lonely">
                 <p>Nombre: Destroy Lonely</p>
                 <p>Género: Trap Experimental</p>
                 <p>Valoración: ★★★★☆</p>
             </article>
 
             <article>
-                <img src="img/Artists/fourArtistNett.webp" alt="Foto del artista Nettspend">
+                <img src="resources/img/Artists/fourArtistNett.webp" alt="Foto del artista Nettspend">
                 <p>Nombre: Nettspend</p>
                 <p>Género: Rage / PluggnB</p>
                 <p>Valoración: ★★★★☆</p>
             </article>
 
             <article>
-                <img src="img/Artists/fiveArtistTravis.webp" alt="Foto del artista Travis Scott">
+                <img src="resources/img/Artists/fiveArtistTravis.webp" alt="Foto del artista Travis Scott">
                 <p>Nombre: Travis Scott</p>
                 <p>Género: Hip Hop</p>
                 <p>Valoración: ★★★★★</p>
             </article>
 
             <article>
-                <img src="img/Artists/sixArtistYeat.webp" alt="Foto del artista Yeat">
+                <img src="resources/img/Artists/sixArtistYeat.webp" alt="Foto del artista Yeat">
                 <p>Nombre: Yeat</p>
                 <p>Género: Trap / Experimental</p>
                 <p>Valoración: ★★★★☆</p>
             </article>
 
             <article>
-                <img src="img/Artists/sevenArtistUzi.webp" alt="Foto del artista Lil Uzi Vert">
+                <img src="resources/img/Artists/sevenArtistUzi.webp" alt="Foto del artista Lil Uzi Vert">
                 <p>Nombre: Lil Uzi Vert</p>
                 <p>Género: Hip Hop / Rage</p>
                 <p>Valoración: ★★★★☆</p>
             </article>
 
             <article>
-                <img src="img/Artists/eightArtistDon.webp" alt="Foto del artista Don Toliver">
+                <img src="resources/img/Artists/eightArtistDon.webp" alt="Foto del artista Don Toliver">
                 <p>Nombre: Don Toliver</p>
                 <p>Género: R&B / Trap</p>
                 <p>Valoración: ★★★★☆</p>
@@ -197,7 +203,7 @@
         <section>
             <h2>Festivales</h2>
             <article>
-                <img src="img/cartelRollingLoud.webp" alt="Cartel del festival Rolling Loud">
+                <img src="resources/img/cartelRollingLoud.webp" alt="Cartel del festival Rolling Loud">
                 <p>Nombre: Rolling Loud</p>
                 <p>Lugar: Miami, Estados Unidos</p>
                 <p>Fechas: 18 - 20 julio 2026</p>
@@ -207,7 +213,7 @@
             </article>
 
             <article>
-                <img src="img/otherConcerts/wirelessUK.jpg" alt="Cartel del festival Wireless Festival">
+                <img src="resources/img/otherConcerts/wirelessUK.jpg" alt="Cartel del festival Wireless Festival">
                 <p>Nombre: Wireless Festival</p>
                 <p>Lugar: Londres, Reino Unido</p>
                 <p>Fechas: 5 - 7 julio 2026</p>
@@ -217,7 +223,8 @@
             </article>
 
             <article>
-                <img src="img/otherConcerts/rollingLoudPortugal.jpg" alt="Cartel del festival Rolling Loud Portugal">
+                <img src="resources/img/otherConcerts/rollingLoudPortugal.jpg"
+                    alt="Cartel del festival Rolling Loud Portugal">
                 <p>Nombre: Rolling Loud Portugal</p>
                 <p>Lugar: Portimão, Portugal</p>
                 <p>Fechas: 10 - 12 agosto 2026</p>
@@ -252,13 +259,13 @@
     <aside>
         <h2>Promociones</h2>
         <section>
-            <img src="img/ads/ad1.jpg" alt="Imagen de la playlist en Spotify">
+            <img src="resources/img/ads/ad1.jpg" alt="Imagen de la playlist en Spotify">
             <p>Título: Playlist Rolling Loud</p>
             <p><a href="#">Escuchar en Spotify</a></p>
         </section>
 
         <section>
-            <img src="img/ads/ad2.jpg" alt="Imagen de la radio hip-hop">
+            <img src="resources/img/ads/ad2.jpg" alt="Imagen de la radio hip-hop">
             <p>Título: Radio Hip Hop 24/7</p>
             <p><a href="#">Escuchar la radio</a></p>
         </section>
