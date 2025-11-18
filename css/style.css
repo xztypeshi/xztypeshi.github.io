@@ -238,6 +238,7 @@ ul.horizontal-navBar a:hover {
   background: linear-gradient(180deg, rgba(32, 227, 255, 0.1) 85%, rgba(0, 0, 0, 1) 100%);
   margin: 0;
   padding: 0;
+  padding-bottom: 2.5rem;
 }
 
 .flex-container {
@@ -246,8 +247,8 @@ ul.horizontal-navBar a:hover {
 }
 
 .lastReleasesSection h2 {
-  margin-top: 0;
   padding-top: 2rem;
+  margin: 0 0 3rem 0;
 }
 
 .lastReleasesSection img {
@@ -256,7 +257,7 @@ ul.horizontal-navBar a:hover {
   object-fit: cover;
 }
 
-/*Ref: https://github.com/youneslaaroussi/ui-buttons*/
+/*Ref: https://github.com/youneslaaroussi/ui-buttons */
 .lastReleasesSection a {
   display: inline-block;
   color: #fff;
@@ -284,8 +285,135 @@ ul.horizontal-navBar a:hover {
 
 /*Featured Artists*/
 
-.featuredArtistsSection img {
-  width:  256px;
-  height: 256px;
-  object-fit: cover;
+.featuredArtistsSection {
+  background: linear-gradient(180deg, rgba(182, 255, 59, 0.1) 0%, #000 100%);
+  padding: 2rem 0;
 }
+
+.featuredArtistsSection h2 {
+  margin: 0 0 3rem 0;
+}
+
+/*Ref: https://dev.to/m97chahboun/responsive-card-layout-with-css-grid-a-step-by-step-guide-3ej1 */
+.artists-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.artist-card {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.artist-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 43, 166, 0.2);
+}
+
+.artist-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.artist-info h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+}
+
+.artist-info .genre {
+  margin: 0 0 0.25rem 0;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.artist-info .rating {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #FFD700;
+}
+
+/*
+
+*/
+
+
+/* Footer */
+
+footer {
+  background-color: #000;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem 0 1.5rem 0;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Footer logo */
+.footer-logo h2 {
+  margin: 0;
+  padding-left: 0.5rem;
+  font-size: 1.5rem;
+  user-select: none;
+}
+
+.footer-logo span {
+  color: #FF2BA6;
+  background-image: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Social links */
+.footer-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #20E3FF;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
