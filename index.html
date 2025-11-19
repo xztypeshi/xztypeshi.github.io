@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/global/css/style.css">
     <link rel="icon" type="image/x-icon" href="resources/img/logo/blackLogo.ico">
     <title>SoundTecITB - Página principal</title>
 </head>
@@ -19,7 +19,7 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="festivales.html">Festivales</a></li>
                 <li><a href="detalle.html">Detalle</a></li>
-                <li><a href="alta.html">Darse de alta</a></li>
+                <li><a href="/pages/alta.html">Darse de alta</a></li>
             </ul>
         </nav>
     </header>
@@ -228,81 +228,94 @@
                 </div>
             </div>
         </section>
+    </main>
 
-        <!--List of festivals-->
-        <section>
-            <div class="container">
+        <!-- Festival/Aside Wrapper -->
+        <div class="page-layout">
+            <!-- Festivals -->
+            <section class="festivalsSection">
                 <h2>Festivales</h2>
-                <article>
-                    <img src="resources/img/otherConcerts/rollingLoudMiami.jpg" alt="Foto del festival Rolling Loud">
-                    <p>Nombre: Rolling Loud</p>
-                    <p>Lugar: Miami, Estados Unidos</p>
-                    <p>Fechas: 18 - 20 julio 2026</p>
-                    <p>Descripción: El festival más grande del mundo dedicado al hip-hop y al trap, con escenarios espectaculares y artistas de primer nivel.</p>
-                    <p>Tags: Hip Hop, Trap, Internacional</p>
+                
+                <article class="festival-card">
+                    <img src="resources/img/otherConcerts/rollingLoudMiami.jpg" alt="Festival Rolling Loud">
+                    <div class="festival-info">
+                        <h3>Primavera Sound</h3>
+                        <p>Barcelona · Finales de mayo/primera semana de junio</p>
+                        <p>Headliners: Karol G</p>
+                        <p>Tags: Indie, Electrónica, Pop</p>
+                    </div>
                 </article>
 
-                <article>
-                    <img src="resources/img/otherConcerts/wirelessFestival.jpg" alt="Foto del festival Wireless Festival">
-                    <p>Nombre: Wireless Festival</p>
-                    <p>Lugar: Londres, Reino Unido</p>
-                    <p>Fechas: 5 - 7 julio 2026</p>
-                    <p>Descripción: Uno de los festivales urbanos más importantes de Europa, centrado en hip-hop y música urbana contemporánea.</p>
-                    <p>Tags: Urban, Hip Hop, Trap</p>
+                <article class="festival-card">
+                    <img src="resources/img/otherConcerts/wirelessFestival.jpg" alt="Festival Wireless">
+                    <div class="festival-info">
+                        <h3>Aurora Fest</h3>
+                        <p>Montbrió · 12-14 Jul</p>
+                        <p>Headliners: Atlas, Keila Nova</p>
+                        <p>Tags: Escenografía, Sostenible</p>
+                    </div>
                 </article>
 
-                <article>
-                    <img src="resources/img/otherConcerts/rollingLoudPortugal.jpeg" alt="Foto del festival Rolling Loud Portugal">
-                    <p>Nombre: Rolling Loud Portugal</p>
-                    <p>Lugar: Portimão, Portugal</p>
-                    <p>Fechas: 10 - 12 agosto 2026</p>
-                    <p>Descripción: Versión europea del legendario festival, con playas, beats y artistas internacionales del trap y rap.</p>
-                    <p>Tags: Trap, Rap, Verano</p>
+                <article class="festival-card">
+                    <img src="resources/img/otherConcerts/rollingLoudPortugal.jpeg" alt="Festival Altitude">
+                    <div class="festival-info">
+                        <h3>Altitude</h3>
+                        <p>Andorra · 20-22 Feb</p>
+                        <p>Headliners: M83, Halo</p>
+                        <p>Tags: Major DJ, Tecnología</p>
+                    </div>
                 </article>
-            </div>
-        </section>
+            </section>
+
+            <!-- Aside -->
+            <aside>
+                <h2>Promociones</h2>
+                
+                <div class="promo">
+                    <img src="resources/img/ads/ad1.jpg" alt="Playlist Spotify">
+                    <h3>Escúchalo en Spotify</h3>
+                    <p>Playlist «SoundWave Hits»</p>
+                    <a href="#">Abrir app</a>
+                </div>
+
+                <div class="promo">
+                    <img src="resources/img/ads/ad2.jpg" alt="Radio">
+                    <h3>Radio Indie BCN</h3>
+                    <p>Emisión en directo · 24/7</p>
+                    <a href="#">Escuchar</a>
+                </div>
+            </aside>
+        </div>
 
 
         <!--Most listened songs-->
-        <section>
+        <section class="topSongsSection">
             <div class="container">
-                <h2>Lo más escuchado (Top 10)</h2>
-                <section>
-                    <ol>
-                        <li>Playboi Carti - Sky <a href="detalle.html">Más info</a></li>
-                        <li>Ken Carson - Freestyle 2 <a href="detalle.html">Más info</a></li>
-                        <li>Destroy Lonely - If Looks Could Kill <a href="detalle.html">Más info</a></li>
-                        <li>Yeat - Bëttr 0ff <a href="detalle.html">Más info</a></li>
-                        <li>Nettspend - Plugged In <a href="detalle.html">Más info</a></li>
-                        <li>Travis Scott - FE!N <a href="detalle.html">Más info</a></li>
-                        <li>Lil Uzi Vert - Just Wanna Rock <a href="detalle.html">Más info</a></li>
-                        <li>Don Toliver - After Party <a href="detalle.html">Más info</a></li>
-                        <li>Destroy Lonely - Crystal Castles <a href="detalle.html">Más info</a></li>
-                        <li>Playboi Carti - Stop Breathing <a href="detalle.html">Más info</a></li>
+                <h2>Lo más escuchado · Top 10</h2>
+                
+                <div class="top-songs-grid">
+                    <!-- Left column (1-5) -->
+                    <ol class="songs-column">
+                        <li>Playboi Carti — <span>Sky</span></li>
+                        <li>Ken Carson — <span>Freestyle 2</span></li>
+                        <li>Destroy Lonely — <span>If Looks Could Kill</span></li>
+                        <li>Yeat — <span>Bëttr 0ff</span></li>
+                        <li>Nettspend — <span>Plugged In</span></li>
                     </ol>
-                </section>
+                    
+                    <!-- Right column (6-10) -->
+                    <ol class="songs-column" start="6">
+                        <li>Travis Scott — <span>FE!N</span></li>
+                        <li>Lil Uzi Vert — <span>Just Wanna Rock</span></li>
+                        <li>Don Toliver — <span>After Party</span></li>
+                        <li>Destroy Lonely — <span>Crystal Castles</span></li>
+                        <li>Playboi Carti — <span>Stop Breathing</span></li>
+                    </ol>
+                </div>
             </div>
         </section>
-    </main>
-
-    <!--Aside Ads-->
-    <aside>
-        <h2>Promociones</h2>
-        <section>
-            <img src="resources/img/ads/ad1.jpg" alt="Imagen de la playlist en Spotify">
-            <p>Título: Playlist Rolling Loud</p>
-            <p><a href="#">Escuchar en Spotify</a></p>
-        </section>
-
-        <section>
-            <img src="resources/img/ads/ad2.jpg" alt="Imagen de la radio hip-hop">
-            <p>Título: Radio Hip Hop 24/7</p>
-            <p><a href="#">Escuchar la radio</a></p>
-        </section>
-    </aside>
 
 
-    <!--Footer-->
     <!--Footer-->
     <footer>
         <div class="footer-content">
