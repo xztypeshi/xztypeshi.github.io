@@ -1,58 +1,3 @@
-/* Basic setup */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #000;
-    color: white;
-    font-family: ClashDisplay-Regular;
-}
-
-/* Header */
-header {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-h1 {
-    font-size: 24px;
-}
-
-h1 span {
-  color: #FF2BA6;
-  background-image: var(--gradient);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-}
-
-.horizontal-navBar {
-    display: flex;
-    list-style: none;
-    gap: 10px;
-}
-
-.horizontal-navBar a {
-    color: white;
-    text-decoration: none;
-    padding: 15px 20px;
-    border-radius: 10px;
-}
-
-.horizontal-navBar a:hover {
-    background-color: #111;
-}
-
 /* Main form section */
 main {
     display: flex;
@@ -107,6 +52,15 @@ select {
     border-radius: 10px;
     color: white;
     font-size: 16px;
+}
+
+select {
+    width: 105%;
+}
+
+/* Options inside select*/
+option {
+    color: black;
 }
 
 input::placeholder {

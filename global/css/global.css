@@ -11,3 +11,97 @@
   font-display: swap;
   font-style: normal;
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html, body {
+  -ms-overflow-style: none; /* Inetrnet explorer and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000;
+  color: white;
+  margin: 0;
+  font-family: ClashDisplay-Regular;
+}
+
+/* Shared Header in every page */
+
+h1 {
+  user-select: none;
+}
+
+h1 span{
+  color: #FF2BA6;
+  background-image: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+h2 {
+  font-size: 200%;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #ffffff6b;
+}
+
+.horizontal-navBar {
+  display: flex;
+  align-items: center;
+}
+
+.horizontal-navBar li:nth-child(2) { /* Logo is first child */
+  margin-left: auto;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 0 20px;
+}
+
+ul.horizontal-navBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+ul.horizontal-navBar li {
+  display: flex;
+  align-items: center;
+}
+
+ul.horizontal-navBar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 24px;
+  text-decoration: none;
+  transition: border-radius 0.2s ease;
+  border-radius: 15px;
+}
+
+
+ul.horizontal-navBar a:hover {
+  background-color: #111;
+  border-radius: 20px; 
+}
