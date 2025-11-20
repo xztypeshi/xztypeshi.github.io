@@ -8,7 +8,7 @@
 body {
     background-color: #000;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: ClashDisplay-Regular;
 }
 
 /* Header */
@@ -28,7 +28,12 @@ h1 {
 }
 
 h1 span {
-    color: #FF2BA6;
+  color: #FF2BA6;
+  background-image: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 .horizontal-navBar {
@@ -179,6 +184,11 @@ footer {
 
 .footer-logo span {
     color: #FF2BA6;
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 
 .footer-links {

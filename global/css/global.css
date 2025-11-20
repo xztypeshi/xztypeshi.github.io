@@ -1,0 +1,13 @@
+:root {
+  --gradient: linear-gradient(90deg,rgba(255, 43, 166, 1) 0%, rgba(32, 227, 255, 1) 50%, rgba(182, 255, 59, 1) 100%);
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Regular';
+  src: url('../fonts/ClashDisplay-Regular.woff2') format('woff2'),
+       url('../fonts/ClashDisplay-Regular.woff') format('woff'),
+       url('../fonts/ClashDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
