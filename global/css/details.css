@@ -1,0 +1,90 @@
+body {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+}
+
+.artist-detail {
+    max-width: 500px;
+    margin: 3rem auto 4rem auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(32, 227, 255, 0.025);
+    text-align: center;
+}
+
+.artist-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.2rem;
+    border: 3px solid #FF2BA6;
+}
+
+.artist-name {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.artist-style,
+.artist-rating {
+    margin-bottom: 0.5rem;
+    font-size: 1.04rem;
+}
+
+.artist-bio {
+    margin: 0.4rem 0 1.5rem 0;
+    font-size: 1rem;
+    color: rgba(255,255,255,0.85);
+}
+.album-title {
+    color: #20E3FF;
+}
+
+.albums-list,
+.songs-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0.7rem 0;
+    text-align: left;
+}
+
+.albums-list li,
+.songs-list li {
+    margin-bottom: 0.6em;
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+}
+
+.mini-album {
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+    border-radius: 7px;
+    border: 1px solid #20E3FF;
+}
+
+.artist-links {
+    margin-top: 1.3rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+.artist-links a {
+    color: #20E3FF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 4px 15px;
+    border-radius: 14px;
+    background: rgba(32, 227, 255, 0.08);
+    transition: background 0.2s;
+}
+
+.artist-links a:hover {
+    background: rgba(32, 227, 255, 0.25);
+    box-shadow: 0 1px 8px #20E3FF22;
+}
