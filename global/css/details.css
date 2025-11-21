@@ -4,6 +4,8 @@ body {
     margin: 0;
 }
 
+/* Artist */
+
 .artist-detail {
     max-width: 500px;
     margin: 3rem auto 4rem auto;
@@ -37,8 +39,9 @@ body {
 .artist-bio {
     margin: 0.4rem 0 1.5rem 0;
     font-size: 1rem;
-    color: rgba(255,255,255,0.85);
+    color: rgba(255, 255, 255, 0.85);
 }
+
 .album-title {
     color: #20E3FF;
 }
